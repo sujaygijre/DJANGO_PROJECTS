@@ -1,0 +1,16 @@
+<h1>There are : {{count}} words in your text</h1>
+
+<h1>ORIGNAL</h1>
+{{fulltext}}
+
+<h1>WORD COUNT</h1>
+{{count}}
+<br/>
+
+<h1>WORD LIST</h1>
+
+{% for word,num in sortedlist %}
+
+{{word}} : {{num}}
+<br/>
+{% endfor %}
